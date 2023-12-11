@@ -43,7 +43,7 @@ static ssize_t device_read(struct file *file, char __user *user_buffer, size_t c
 static ssize_t device_write(struct file *file, const char __user *user_buffer, size_t count, loff_t *offset) {
 	int retval;
 	retval = copy_from_user(&kernel_struct, user_buffer, count);
-	pr_info("%s: Copy from user returned:%d\n", __func__, kernel_struct.i, kernel_struct.c, count, *offset);
+	pr_info("%s: Copy from user returned:%d\n", __func__, retval);
 	return count;
 }
 
