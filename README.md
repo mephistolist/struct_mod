@@ -1,5 +1,5 @@
 # struct_mod
-Just a simple app that passes struct values to a driver. Tested on kernel 6.6.3.
+Just a simple app that passes struct values to a basic character driver. Tested on kernel 6.6.3.
 
 Run "make" to build the driver and userapp.
 You can insert the driver with insmod ./hello.ko. 
